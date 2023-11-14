@@ -11,7 +11,7 @@ Aplikasi Manajamen Kos sederhana dengan konsep Microservice
  - [Asmin](https://github.com/asmindev)
  - [Ichwan](https://github.com/Ichwannur)
  - [Nasir Azis Jaelani](https://github.com/Glorypower6)
- - [Thoriq Asyamil](https://github.com/CodenameRiq)
+ - [Thariq Asy Asyamil](https://github.com/CodenameRiq)
  - [Samsudin](https://github.com/28Sam)
  - [Windy Astuti](https://github.com/WindyAstuti307)
 
