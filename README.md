@@ -6,7 +6,7 @@ Aplikasi Manajamen Kos sederhana dengan konsep Microservice
 
 ## Our Team
 
- - [Adza](https://github.com/Adzaaulia)
+ - [Adza aulia](https://github.com/Adzaaulia)
  - [Adel](https://github.com/adelmuia)
  - [Asmin](https://github.com/asmindev)
  - [Ichwan](https://github.com/Ichwannur)
