@@ -2,11 +2,12 @@ import os
 from flask import Flask, request, jsonify
 from app.models import db, Property
 from flask_migrate import Migrate
+from dotenv import load_dotenv
 
+load_dotenv()
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = (
-    os.environ.get("DATABASE_URI") or "mysql://root:@localhost/property_db"
-)
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URI")
+
 app.config.from_object("config.config")
 db.init_app(app)
 migrate = Migrate(app, db)
