@@ -3,7 +3,7 @@
 
 Aplikasi Manajamen Kos sederhana dengan konsep Microservice
 
-## Payment Services (Windi solo)
+## Payment Services (windy dan asmin)
 
 ## Our Team
 
