@@ -1,9 +1,10 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = (
-        os.environ.get("DATABASE_URI") or "mysql://rot:@localhost/property_db"
-    )
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URI")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = "adzakost"
