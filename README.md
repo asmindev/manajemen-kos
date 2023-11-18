@@ -1,4 +1,5 @@
 ## property services (ADELL)
+## property services (THARIQ)
 install requirements
 configure env with database uri
 migrate with command
