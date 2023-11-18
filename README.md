@@ -2,7 +2,7 @@
 
 Aplikasi Manajamen Kos sederhana dengan konsep Microservice
 
-## Payment Services (Windy dan Asmin)
+## Payment Services (Windy)
 
 ## Tech
 
