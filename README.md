@@ -3,7 +3,7 @@
 
 Aplikasi Manajamen Kos sederhana dengan konsep Microservice
 
-## Payment Services (windy dan asmin)
+## Payment Services (Windy dan Asmin)
 
 ## Our Team
 
