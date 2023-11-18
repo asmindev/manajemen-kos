@@ -5,6 +5,9 @@ Aplikasi Manajamen Kos sederhana dengan konsep Microservice
 
 ## Payment Services (Windy dan Asmin)
 
+## Tech
+
+Express.js and Mongodb
 ## Our Team
 
  - [Adza](https://github.com/Adzaaulia)
