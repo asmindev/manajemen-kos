@@ -1,5 +1,5 @@
 ## property services (Adell)
-## property services (THARIQ)
+## yang digunakan flask dan pyhton (Thariq)
 install requirements
 configure env with database uri
 migrate with command
