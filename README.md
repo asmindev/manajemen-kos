@@ -1,4 +1,4 @@
-## property services (ADELL)
+## property services (Adell)
 ## property services (THARIQ)
 install requirements
 configure env with database uri
