@@ -12,7 +12,7 @@ def seed_data():
                 "price": 1200.0,
             },
             {
-                "name": "Luxury Villa",
+                "name": "Lux Villa",
                 "price": 5000.0,
             },
             {
@@ -45,7 +45,6 @@ def seed_data():
             },
             {
                 "name": "Treehouse Retreat",
-                
                 "price": 1200.0,
             },
         ]
