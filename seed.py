@@ -1,3 +1,6 @@
+# adel
+# seed.py
+
 # app/data/seed_data.py
 
 from app.models import Property, db
@@ -109,6 +112,7 @@ def seed_data():
 def clear_data():
     with app.app_context():
         db.drop_all()
+
 
 if __name__ == "__main__":
     try:
