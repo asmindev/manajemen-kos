@@ -11,14 +11,13 @@ app.use(bodyParser.json());
 app.use("/api/payment", router);
 
 // listen app
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT || 5003;
 app.listen(PORT, () => {
     mongoose
         .connect(process.env.DATABASE_URI, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
         })
         .then(() => console.log("MongoDB Connected"))
         .catch((err) => console.log(err));
-    console.log("server running at port: ", PORT);
+    console.log("Server running at port: ", PORT);
 });

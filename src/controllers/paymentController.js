@@ -1,3 +1,6 @@
+// # windi
+// # controllers/PaymentControllers
+
 const jwt = require("jsonwebtoken");
 const Payment = require("../models/paymentModel");
 const keys = require("../config/keys");
@@ -7,11 +10,13 @@ exports.create = async (req, res) => {
         const item = req.body;
         const current = new Date();
         const newPayment = new Payment({
-            order_id: item.id,
+            paymentId: item.payment,
+            userId: item.user,
             amount: item.price,
             paymentDate: current.getTime(),
         });
         await newPayment.save();
+        console.log("clicked");
         const sign = jwt.sign(newPayment.toObject(), keys.secretKey);
         res.status(200).json({ id: sign });
     } catch (err) {
