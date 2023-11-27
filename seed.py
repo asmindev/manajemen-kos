@@ -1,4 +1,4 @@
-# adel
+
 # seed.py
 
 # app/data/seed_data.py
