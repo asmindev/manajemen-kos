@@ -1,3 +1,6 @@
+// sam
+// app.py
+
 // src/app.js
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -7,7 +10,7 @@ const authMiddleware = require("./middleware");
 require("dotenv").config(); // Menambahkan ini untuk membaca variabel lingkungan dari .env
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5002;
 
 // Middleware
 app.use(bodyParser.json());
