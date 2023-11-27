@@ -1,8 +1,14 @@
+
+
 // models/paymentModel.js
 const mongoose = require("mongoose");
 
 const paymentSchema = new mongoose.Schema({
-    order_id: {
+    paymentId: {
+        type: String,
+        required: true,
+    },
+    userId: {
         type: String,
         required: true,
     },
