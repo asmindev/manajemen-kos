@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Manajemen kos
 
-## Getting Started
+Manajemen kos dengan konsep Microservices
 
-First, run the development server:
+## Instalasi
+
+Clone repo
+
+### branch main (nextjs)
 
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### branch user-auth-services (express + mongodb)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+yarn
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Env variable
 
-## Learn More
+edit .env file pada branch user-auth-services
+`MONGO_URI="mongodb+srv://adza:kost@cluster0.qeohtoy.mongodb.net/?retryWrites=true&w=majority`
+`PORT=5000`
 
-To learn more about Next.js, take a look at the following resources:
+### branch property-services (Flask + Mysql)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+buat enviroment virtual dengan [virtualenv](https://pypi.org/project/virtualenv/) lalu jalankan virtualenv
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+pip3 install -r requirements.txt
+flask db init
+flask db migrate -m "your message"
+flask db upgrade
+python3 app.py
+```
 
-## Deploy on Vercel
+#### Env variable
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+edit .env file pada branch property-services
+`DATABASE_URI="mysql://<username>:<password>@localhost/property_db"`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### branch booking (express + Mysql)
+
+```bash
+yarn
+yarn dev
+```
+
+#### Env variable
+
+edit .env file pada branch booking-services
+
+`DB_HOST=localhost`
+
+`DB_USER= # username`
+
+`DB_PASSWORD=# password`
+
+`DB_NAME=booking_db`
+
+### branch booking (express + Mysql)
+
+```bash
+yarn
+yarn dev
+```
+
+#### Env variable
+
+edit .env file pada branch payment-services
+
+`DATABASE_URI='mongodb+srv://adza:kos@cluster0.qeohtoy.mongodb.net/?retryWrites=true&w=majority'`
+
+`PORT=5003`
