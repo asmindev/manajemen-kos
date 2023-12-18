@@ -19,7 +19,7 @@ require("./config/passport")(passport);
 
 // Routes
 app.get("/", (req, res) => {
-    return res.json({ hello: "world" });
+    return res.json({ hello: "adell" });
 });
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
