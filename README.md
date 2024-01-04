@@ -1,5 +1,5 @@
 # Manajemen kos
-samsudin
+sam
 
 Manajemen kos dengan konsep Microservices
 Asmin_E1E121023
